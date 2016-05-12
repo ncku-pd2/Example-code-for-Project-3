@@ -27,6 +27,9 @@ public:
     ~MainWindow();
     void showEvent(QShowEvent *);
     bool eventFilter(QObject *,QEvent *event);
+signals:
+    // Signal for closing the game
+    void quitGame();
 private slots:
     void tick();
 

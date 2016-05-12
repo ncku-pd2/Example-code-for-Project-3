@@ -722,6 +722,43 @@ moc_mainwindow.cpp: ../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/QTimer \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qtimer.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qbasictimer.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/QMouseEvent \
 		gameitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
@@ -738,7 +775,44 @@ moc_mainwindow.cpp: ../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QMainWindow \
 		mainwindow.h
 	/home/kevin/Qt5.5.1/5.5/gcc_64/bin/moc $(DEFINES) -I/home/kevin/Qt5.5.1/5.5/gcc_64/mkspecs/linux-g++ -I/home/kevin/桌面/Example-code-for-Project-3/src -I/home/kevin/Qt5.5.1/5.5/gcc_64/include -I/home/kevin/Qt5.5.1/5.5/gcc_64/include/QtWidgets -I/home/kevin/Qt5.5.1/5.5/gcc_64/include/QtGui -I/home/kevin/Qt5.5.1/5.5/gcc_64/include/QtCore mainwindow.h -o moc_mainwindow.cpp
 
-moc_gameitem.cpp: ../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
+moc_gameitem.cpp: Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
+		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qglobal.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qconfig.h \
@@ -972,6 +1046,43 @@ main.o: main.cpp mainwindow.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/QTimer \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qtimer.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qbasictimer.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/QMouseEvent \
 		gameitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
@@ -1108,6 +1219,43 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/QTimer \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qtimer.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qbasictimer.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/QMouseEvent \
 		gameitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
@@ -1121,48 +1269,47 @@ mainwindow.o: mainwindow.cpp mainwindow.h \
 		land.h \
 		bird.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/QPixmap \
-		ui_mainwindow.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/QVariant \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QAction \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qaction.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qactiongroup.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QApplication \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qapplication.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qcoreapplication.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qeventloop.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/qguiapplication.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/qinputmethod.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QButtonGroup \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qbuttongroup.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsView \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsview.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qscrollarea.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractscrollarea.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qframe.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QHBoxLayout \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qboxlayout.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlayout.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qlayoutitem.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgridlayout.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QHeaderView \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qheaderview.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemview.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qabstractitemmodel.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qitemselectionmodel.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qstyleoption.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractspinbox.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtGui/qvalidator.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qregularexpression.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qslider.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qabstractslider.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qstyle.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qtabbar.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qrubberband.h \
-		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QWidget
+		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o mainwindow.cpp
 
 gameitem.o: gameitem.cpp gameitem.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qglobal.h \
@@ -1265,6 +1412,43 @@ gameitem.o: gameitem.cpp gameitem.h \
 
 bird.o: bird.cpp bird.h \
 		gameitem.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qglobal.h \
@@ -1373,6 +1557,43 @@ bird.o: bird.cpp bird.h \
 
 land.o: land.cpp land.h \
 		gameitem.h \
+		Box2D/Box2D.h \
+		Box2D/Common/b2Settings.h \
+		Box2D/Common/b2Draw.h \
+		Box2D/Common/b2Math.h \
+		Box2D/Common/b2Timer.h \
+		Box2D/Collision/Shapes/b2CircleShape.h \
+		Box2D/Collision/Shapes/b2Shape.h \
+		Box2D/Common/b2BlockAllocator.h \
+		Box2D/Collision/b2Collision.h \
+		Box2D/Collision/Shapes/b2EdgeShape.h \
+		Box2D/Collision/Shapes/b2ChainShape.h \
+		Box2D/Collision/Shapes/b2PolygonShape.h \
+		Box2D/Collision/b2BroadPhase.h \
+		Box2D/Collision/b2DynamicTree.h \
+		Box2D/Common/b2GrowableStack.h \
+		Box2D/Collision/b2Distance.h \
+		Box2D/Collision/b2TimeOfImpact.h \
+		Box2D/Dynamics/b2Body.h \
+		Box2D/Dynamics/b2Fixture.h \
+		Box2D/Dynamics/b2WorldCallbacks.h \
+		Box2D/Dynamics/b2TimeStep.h \
+		Box2D/Dynamics/b2World.h \
+		Box2D/Common/b2StackAllocator.h \
+		Box2D/Dynamics/b2ContactManager.h \
+		Box2D/Dynamics/Contacts/b2Contact.h \
+		Box2D/Dynamics/Joints/b2DistanceJoint.h \
+		Box2D/Dynamics/Joints/b2Joint.h \
+		Box2D/Dynamics/Joints/b2FrictionJoint.h \
+		Box2D/Dynamics/Joints/b2GearJoint.h \
+		Box2D/Dynamics/Joints/b2MotorJoint.h \
+		Box2D/Dynamics/Joints/b2MouseJoint.h \
+		Box2D/Dynamics/Joints/b2PrismaticJoint.h \
+		Box2D/Dynamics/Joints/b2PulleyJoint.h \
+		Box2D/Dynamics/Joints/b2RevoluteJoint.h \
+		Box2D/Dynamics/Joints/b2RopeJoint.h \
+		Box2D/Dynamics/Joints/b2WeldJoint.h \
+		Box2D/Dynamics/Joints/b2WheelJoint.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/QGraphicsPixmapItem \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtWidgets/qgraphicsitem.h \
 		../../../Qt5.5.1/5.5/gcc_64/include/QtCore/qglobal.h \
