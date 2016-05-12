@@ -6,6 +6,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    // Enable the event Filter
+    qApp->installEventFilter(this);
 }
 
 MainWindow::~MainWindow()
@@ -22,10 +24,10 @@ void MainWindow::showEvent(QShowEvent *)
     world = new b2World(b2Vec2(0.0f, -9.8f));
     // Setting Size
     GameItem::setGlobalSize(QSizeF(32,18),size());
-    // Create ground
+    // Create ground (You can edit here)
     itemList.push_back(new Land(16,1.5,32,3,QPixmap(":/ground.png").scaled(width(),height()/6.0),world,scene));
 
-    // Create bird
+    // Create bird (You can edit here)
     Bird *birdie = new Bird(0.0f,10.0f,0.27f,&timer,QPixmap(":/bird.png").scaled(height()/9.0,height()/9.0),world,scene);
     // Setting the Velocity
     birdie->setLinearVelocity(b2Vec2(5,5));
@@ -33,6 +35,27 @@ void MainWindow::showEvent(QShowEvent *)
     // Timer
     connect(&timer,SIGNAL(timeout()),this,SLOT(tick()));
     timer.start(100/6);
+}
+
+bool MainWindow::eventFilter(QObject *, QEvent *event)
+{
+    // Hint: Notice the Number of every event!
+    if(event->type() == QEvent::MouseButtonPress)
+    {
+        /* TODO : add your code here */
+        std::cout << "Press !" << std::endl ;
+    }
+    if(event->type() == QEvent::MouseMove)
+    {
+        /* TODO : add your code here */
+        std::cout << "Move !" << std::endl ;
+    }
+    if(event->type() == QEvent::MouseButtonRelease)
+    {
+        /* TODO : add your code here */
+        std::cout << "Release !" << std::endl ;
+    }
+    return false;
 }
 
 void MainWindow::tick()

@@ -7,6 +7,8 @@
 #include <QDesktopWidget>
 #include <QTimer>
 #include <Box2D/Box2D.h>
+#include <QMouseEvent>
+#include <iostream>
 
 #include <gameitem.h>
 #include <land.h>
@@ -24,7 +26,7 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
     void showEvent(QShowEvent *);
-
+    bool eventFilter(QObject *,QEvent *event);
 private slots:
     void tick();
 
