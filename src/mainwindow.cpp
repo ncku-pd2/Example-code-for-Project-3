@@ -34,6 +34,7 @@ void MainWindow::showEvent(QShowEvent *)
     itemList.push_back(birdie);
     // Timer
     connect(&timer,SIGNAL(timeout()),this,SLOT(tick()));
+    connect(this,SIGNAL(quitGame()),this,SLOT(QUITSLOT()));
     timer.start(100/6);
 }
 
@@ -43,23 +44,35 @@ bool MainWindow::eventFilter(QObject *, QEvent *event)
     if(event->type() == QEvent::MouseButtonPress)
     {
         /* TODO : add your code here */
-        std::cout << "Press !" << std::endl ;
+        //std::cout << "Press !" << std::endl ;
     }
     if(event->type() == QEvent::MouseMove)
     {
         /* TODO : add your code here */
-        std::cout << "Move !" << std::endl ;
+        //std::cout << "Move !" << std::endl ;
     }
     if(event->type() == QEvent::MouseButtonRelease)
     {
         /* TODO : add your code here */
-        std::cout << "Release !" << std::endl ;
+        //std::cout << "Release !" << std::endl ;
     }
     return false;
+}
+
+void MainWindow::closeEvent(QCloseEvent *)
+{
+    // Close event
+    emit quitGame();
 }
 
 void MainWindow::tick()
 {
     world->Step(1.0/60.0,6,2);
     scene->update();
+}
+
+void MainWindow::QUITSLOT()
+{
+    // For debug
+    std::cout << "Quit Game Signal receive !" << std::endl ;
 }

@@ -27,12 +27,15 @@ public:
     ~MainWindow();
     void showEvent(QShowEvent *);
     bool eventFilter(QObject *,QEvent *event);
+    void closeEvent(QCloseEvent *);
 signals:
     // Signal for closing the game
     void quitGame();
+
 private slots:
     void tick();
-
+    // For debug slot
+    void QUITSLOT();
 private:
     Ui::MainWindow *ui;
     QGraphicsScene *scene;
