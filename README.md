@@ -12,5 +12,10 @@ We have provided you :
   * Box2D : box2D's header file.
   * image : store the image we use.
 
+# UML Diagram
+![alt text][figure_lab2]
+
+[figure_lab2]:https://github.com/ncku-pd2/Example-code-for-Project-3/blob/master/UML%20diagram/UML_diagram.png
+
 # Reference 
 [box2D](http://box2d.org/)
